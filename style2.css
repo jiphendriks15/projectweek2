@@ -1,0 +1,26 @@
+body{
+    background-color: cream;
+    font-family: willow;
+    font-size: 1em;
+    text-align: lefts;
+    margin-top: 1em;
+}
+
+h1{
+    margin-top: 2em;
+    text-align: center;
+}
+
+p{
+    font-family: popinss;
+    text-align: center;
+}
+
+img{
+    margin-top: 3em;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    display: inline-flex;
+    margin-left: 0.3em;
+}
