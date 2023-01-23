@@ -1,10 +1,33 @@
+@font-face {
+    font-family: poppins-regular;
+    src: url("../fonts/poppins-regular.ttf");
+  }
+
+
 body{
-    background-color: cream;
-    font-family: willow;
-    font-size: 1em;
-    text-align: lefts;
-    margin-top: 1em;
-    background-image: url("afbeeldingen/achtergrond.png");
+    background-color: aqua;
+}
+
+p{
+    font-family: poppins;
+    text-align: left;
+    padding: 2em;
+    background-color: white;
+    border-radius: 1em;
+    margin: 1em;
+    
+}
+
+h2{
+    font-family: poppins;
+    text-align: center;
+}
+
+img{
+margin-top: 1em;
+width: 95vw;
+height:70vw;
+border-radius: 1em;
 }
 
 @font-face {
@@ -76,31 +99,6 @@ body{
   header img{
     height: 30vw;
     width: 40vw;
-    margin: 0em 0em 0em 3em;
-  }
-  
-  p{
-    font-family: poppins-regular;
-    margin: 0.4em;
-    text-align: left;
-  }
-
-
-
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-    float: left;
-    width: 23%;
-    padding: 3px;
-  }
-
-.column img{
-    border-radius: 2em;
-}
-  
-  /* Clear floats after image containers */
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
+    
+    margin: 1em 0em 0em 3em;
   }

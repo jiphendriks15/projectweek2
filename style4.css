@@ -1,0 +1,143 @@
+@font-face {
+  font-family: poppins-regular;
+  src: url("../fonts/poppins-regular.ttf");
+}
+
+
+body{
+  font-family: willow;
+}
+
+p{
+  font-family: poppins-regular;
+  margin: 0.4em;
+}
+
+a{
+  text-decoration: none;
+}
+.home{
+  background-image: url("afbeeldingen/achtergrond.png");
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0; 
+}
+
+body{
+    font-family: willow;
+    font-size: 1em;
+    text-align: center; 
+    z-index: -1; 
+}
+
+
+
+.dropbtn { 
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  min-width: 15px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color:lightpink;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: cream;}
+
+header{
+  text-align: left; 
+  display: flex;
+}
+
+header img{
+  height: 30vw;
+  width: 40vw;
+  
+  margin: 1em 0em 0em 3em;
+}
+
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: calc(50% - 2em);
+  margin: 1em;
+  
+}
+
+/* Make the image to responsive */
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 2em;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: white;
+  opacity: 0.8;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: .3s ease;
+  
+}
+
+/* When you mouse over the container, the overlay text will "zoom" in display */
+.container:hover .overlay {
+  transform: scale(1);
+  border-radius: 2em;
+}
+
+/* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+.home section{
+  display: flex;
+  flex-wrap: wrap;
+}
+.container p{
+  overflow-wrap: break-word;
+}
