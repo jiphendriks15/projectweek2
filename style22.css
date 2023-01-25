@@ -1,19 +1,10 @@
-body{
-   
-    font-family: willow;
-    font-size: 1em;
-    
-    margin-top: 1em;
-    background-image: url("afbeeldingen/back4.png");
-}
-
 @font-face {
     font-family: poppins-regular;
     src: url("../fonts/poppins-regular.ttf");
   }
 
 
-@font-face {
+  @font-face {
     font-family: willow;
     src: url("fonts/willow.otf")format("opentype");
   }
@@ -23,17 +14,26 @@ main{
 }
 
   h1{
-    font-family: willow;
-    margin-top: 0em;
+    margin-top: 0;
+    margin-bottom: 0;
     color: white;
-    text-shadow: 1px 1px 2px red, 0 0 1em lightpink, 0 0 0.2em white;
+    text-shadow: 1px 1px 2px red, 0 0 1em lightpink, 0 0 0.2em white;  
   }
+  P{
+  font-family: poppins-regular;
+    margin: 0.4em;
+    text-align: left;
+    padding: 1em;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+  }
+
   
-  
+
   .home{
-    background-image: url("afbeeldingen/achtergrond.png");
+    background-image: url("afbeeldingen/back4.png");
     background-size: inherit;
-    background-attachment: fixed;
+    background-attachment: scroll;
     margin: 0; 
   }
   
@@ -42,9 +42,8 @@ main{
       font-size: 1em;
       text-align: center; 
       z-index: -1; 
+      
   }
-  
-  
   
   .dropbtn { 
     background-color: transparent;
@@ -84,6 +83,13 @@ main{
   
   
   
+  header nav{
+    display: flex;
+  }
+  
+  .dropdown{
+    display: initial;
+  }
   header{
     text-align: left; 
     display: flex;
@@ -92,33 +98,20 @@ main{
   header img{
     height: 30vw;
     width: 40vw;
-    margin: 0em 0em 0em 3em;
+    margin: 1em 0em 2em 3em;
   }
-  
-  header nav{
-    display: flex;
+
+  img{
+    width: 15em;
   }
-  
-  .dropdown{
-    display: initial;
-  }
+
   p{
     font-family: poppins-regular;
-    margin: 0.4em;
+    margin: 1em;
+    margin-bottom: 2em;
     text-align: center;
     
   }
-
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body{
-    background-color: aqua;
-}
 
 
 .navbar {
@@ -152,69 +145,17 @@ body{
     color: white;
   }
 
-img{
-    width: 100%;
+.home section{
+    display: flex;
+    align-items: center;
+    margin-left: 2em;
+} 
+.home section img:first-of-type{
+    width: 10vw;
+}
+
+.home section img:last-of-type{
+    width: 10vw;
 }
 
 
-
-
-/* Container needed to position the overlay. Adjust the width as needed */
-.container {
-    position: relative;
-    width: calc(50% - 2.5em);
-    margin: 1em;
-  }
-  
-  /* Make the image to responsive */
-  .image {
-    width: 100%;
-    height: auto;
-    border: 8px solid #f1dcdc;
-    border-radius: 2em;
-    
-  }
-  
-  /* The overlay effect (full height and width) - lays on top of the container and over the image */
-  .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background-color: white;
-    opacity: 0.8;
-    overflow: hidden;
-    width: 100%;
-    height: 55%;
-    transform: scale(0);
-    transition: .2s ease;
-    
-  }
-  
-  /* When you mouse over the container, the overlay text will "zoom" in display */
-  .container:hover .overlay {
-    transform: scale(1);
-    border-radius: 2em;
-  }
-  
-  /* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
-  .text {
-    color: black;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
-  
-  
-  .food section{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .container p{
-    overflow-wrap: break-word;
-  }

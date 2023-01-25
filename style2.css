@@ -1,22 +1,29 @@
 body{
-    background-color: cream;
+   
     font-family: willow;
     font-size: 1em;
-    text-align: lefts;
+
+  
     margin-top: 1em;
-    background-image: url("afbeeldingen/achtergrond.png");
+    background-image: url("afbeeldingen/back4.png");
 }
 
 @font-face {
     font-family: poppins-regular;
     src: url("../fonts/poppins-regular.ttf");
   }
+
+
+  @font-face {
+    font-family: willow;
+    src: url("fonts/willow.otf")format("opentype");
+  }
   
-  
+
   
   .home{
     background-image: url("afbeeldingen/achtergrond.png");
-    background-size: cover;
+    background-size: inherit;
     background-attachment: fixed;
     margin: 0; 
   }
@@ -26,6 +33,8 @@ body{
       font-size: 1em;
       text-align: center; 
       z-index: -1; 
+      margin: 0;
+      margin-bottom: 4em;
   }
   
   
@@ -52,6 +61,7 @@ body{
     min-width: 15px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    
   }
   
   /* Links inside the dropdown */
@@ -66,8 +76,16 @@ body{
   
   .dropdown:hover .dropdown-content {display: block;}
   
-  .dropdown:hover .dropbtn {background-color: cream;}
+
   
+
+  header nav{
+    display: flex;
+  }
+  
+  .dropdown{
+    display: initial;
+  }
   header{
     text-align: left; 
     display: flex;
@@ -76,26 +94,50 @@ body{
   header img{
     height: 30vw;
     width: 40vw;
-    margin: 0em 0em 0em 3em;
+    margin: 1em 0em 0em 3em;
   }
   
-  p{
+
+p:nth-of-type(1){
+        border: none;
+        text-align: center;
+        font-size: 1.2em;
+}
+
+p{
     font-family: poppins-regular;
     margin: 0.4em;
     text-align: left;
+    padding: 1em;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+
   }
-
-
-
+h1{
+    margin-top: 1em;
+    margin-bottom: 0;
+    color: white;
+    text-shadow: 1px 1px 2px red, 0 0 1em lightpink, 0 0 0.2em white;  
+}
+  
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
     float: left;
     width: 23%;
     padding: 3px;
+   
   }
 
+.row{
+    margin: 0.5em;
+}
+
 .column img{
-    border-radius: 2em;
+    border-radius: 1em;
+    border-color: #f1dcdc;
+    border-width: 0.3em;
+    border-style: solid;
+
 }
   
   /* Clear floats after image containers */
@@ -103,4 +145,39 @@ body{
     content: "";
     clear: both;
     display: table;
+  }
+
+
+
+
+  
+  .navbar {
+    background-color: lightpink;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .navbar a.active {
+    background-color:rgb(99, 105, 172) ;
+    color: white;
   }
