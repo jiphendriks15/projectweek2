@@ -8,13 +8,27 @@
     font-family: willow;
     src: url("fonts/willow.otf")format("opentype");
   }
+
 body{
-    background-color: aqua;
+    font-family: willow;
+    font-size: 1em;
+    text-align: center; 
+    z-index: -1; 
 }
 
 main{
     margin-bottom: 4em;
 }
+
+p{
+    font-family: poppins-regular;
+      margin: 0.4em;
+      text-align: left;
+      padding: 1em;
+      border: 2px solid rgba(255,255,255,0.5);
+      border-radius: 20px;
+  }
+
 h1{
     font-family: willow;
     margin-top: 0em;
@@ -27,47 +41,11 @@ h2{
     text-align: center;
 }
 
-img{
-margin-top: 1em;
-width: 95vw;
-height:70vw;
-border-radius: 1em;
-}
-
-@font-face {
-    font-family: poppins-regular;
-    src: url("../fonts/poppins-regular.ttf");
-  }
-  
-  
-  
-  .home{
-    background-image: url("afbeeldingen/back4.png");
-    background-size: inherit;
-    background-attachment: fixed;
-    margin: 0; 
-    background-repeat: no-repeat;
+.dropdown{
+    display: initial;
   }
 
-p{
-  font-family: poppins-regular;
-    margin: 0.4em;
-    text-align: left;
-    padding: 1em;
-    border: 2px solid rgba(255,255,255,0.5);
-    border-radius: 20px;
-}
-  
-  body{
-      font-family: willow;
-      font-size: 1em;
-      text-align: center; 
-      z-index: -1; 
-  }
-  
-  
-  
-  .dropbtn { 
+.dropbtn { 
     background-color: transparent;
     color: white;
     padding: 10px;
@@ -104,7 +82,6 @@ p{
   .dropdown:hover .dropdown-content {display: block;}
   
 
-  
   header{
     text-align: left; 
     display: flex;
@@ -120,11 +97,22 @@ p{
   header nav{
     display: flex;
   }
-  
-  .dropdown{
-    display: initial;
+
+
+  .home{
+    background-image: url("afbeeldingen/back4.png");
+    background-size: inherit;
+    background-attachment: fixed;
+    margin: 0; 
+    background-repeat: no-repeat;
   }
 
+img{
+margin-top: 1em;
+width: 95vw;
+height:70vw;
+border-radius: 1em;
+}
 
 .navbar {
     background-color: lightpink;

@@ -3,23 +3,22 @@
   src: url("fonts/poppins-regular.ttf");
 }
 
-
 @font-face {
   font-family: willow;
   src: url("fonts/willow.otf")format("opentype");
 }
-.home{
-  background-image: url("afbeeldingen/back4.png");
-  background-size: inherit;
-  background-attachment: fixed;
-  margin: 0; 
+
+body{
+  font-family: willow;
+  font-size: 1em;
+  text-align: center; 
+  z-index: -1; 
 }
+
 main{
   margin-bottom: 4em;
 }
-body{
-  font-family: willow;
-}
+
 
 p{
   font-family: poppins-regular;
@@ -33,24 +32,10 @@ h1{
   text-shadow: 1px 1px 2px red, 0 0 1em lightpink, 0 0 0.2em white;  
 }
 
-a{
-  text-decoration: none;
-}
-.home{
-  background-image: url("afbeeldingen/back4.png");
-  background-size: inherit;
-  background-attachment: fixed;
-  margin: 0; 
-}
 
-body{
-    font-family: willow;
-    font-size: 1em;
-    text-align: center; 
-    z-index: -1; 
+.dropdown{
+  display: initial;
 }
-
-
 
 .dropbtn { 
   background-color: transparent;
@@ -89,7 +74,6 @@ body{
 .dropdown:hover .dropdown-content {display: block;}
 
 
-
 header{
   text-align: left; 
   display: flex;
@@ -106,9 +90,22 @@ header nav{
   display: flex;
 }
 
-.dropdown{
-  display: initial;
+.home{
+  background-image: url("afbeeldingen/back4.png");
+  background-size: inherit;
+  background-attachment: fixed;
+  margin: 0; 
 }
+
+.home section{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a{
+  text-decoration: none;
+}
+
 /* Container needed to position the overlay. Adjust the width as needed */
 .container {
   position: relative;
@@ -159,16 +156,9 @@ header nav{
   text-align: center;
 }
 
-
-
-.home section{
-  display: flex;
-  flex-wrap: wrap;
-}
 .container p{
   overflow-wrap: break-word;
 }
-
 
 .navbar {
   background-color: lightpink;

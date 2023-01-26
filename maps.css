@@ -1,16 +1,3 @@
-body{
-    background-color: aqua;
-}
-
-main{
-    margin-bottom: 4em;
-}
-section iframe{
- width: 100vw;
- margin: auto;
-}
-
-
 @font-face {
     font-family: poppins-regular;
     src: url("fonts/poppins-regular.ttf")format("truetype");
@@ -20,37 +7,49 @@ section iframe{
     font-family: willow;
     src: url("fonts/willow.otf")format("opentype");
   }
-  
-  
-  
-  .home{
-    background-image: url("afbeeldingen/back4.png");
-    background-size: inherit;
-    background-attachment: scroll;
-    margin: 0; 
+
+body{
     font-family: willow;
-  }
-  .home main{
-    align-self: start;
-  }
-  body{
-      font-family: willow;
-      font-size: 1em;
-      font-weight: lighter;
-      text-align: center; 
-      z-index: -1; 
+    font-size: 1em;
+    font-weight: lighter;
+    text-align: center; 
+    z-index: -1; 
+}
+
+main{
+    margin-bottom: 4em;
+}
+
+
+  
+p{
+    font-family: poppins-regular;
+    margin: 0.4em;
   }
   
-  .dropbtn { 
+  h1{
+    font-family: willow;
+    margin-top: 0em;
+    color: white;
+    text-shadow: 1px 1px 2px red, 0 0 1em lightpink, 0 0 0.2em white;
+  }
+  h2{
+    padding: 0;
+    margin-top: 19em;
+  }
+  
+  h3{
+    padding: 2em 1em 0em 0.5em;
+  }
+  
+.dropbtn { 
     background-color: transparent;
     color: white;
     padding: 10px;
     font-size: 16px;
     border: none;
   }
-  header nav{
-    display: flex;
-  }
+ 
   
   .dropdown{
     display: initial;
@@ -83,9 +82,6 @@ section iframe{
   
   .dropdown:hover .dropdown-content {display: block;}
   
-  
-  
-  
   header{
     text-align: left; 
     display: flex;
@@ -102,28 +98,28 @@ section iframe{
   header nav{
     width: 100vw;
     text-align: center;
+    display: flex;
   }
+
+
   
-  p{
-    font-family: poppins-regular;
-    margin: 0.4em;
-  }
-  
-  h1{
+  .home{
+    background-image: url("afbeeldingen/back4.png");
+    background-size: inherit;
+    background-attachment: scroll;
+    margin: 0; 
     font-family: willow;
-    margin-top: 0em;
-    color: white;
-    text-shadow: 1px 1px 2px red, 0 0 1em lightpink, 0 0 0.2em white;
   }
-  h2{
-    padding: 0;
-    margin-top: 19em;
+  .home main{
+    align-self: start;
   }
   
-  h3{
-    padding: 2em 1em 0em 0.5em;
-  }
-  
+
+
+section iframe{
+ width: 100vw;
+ margin: auto;
+}
 
 .navbar {
     background-color: lightpink;

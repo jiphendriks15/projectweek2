@@ -13,12 +13,22 @@ main{
     margin-bottom: 4em;
 }
 
+
+body{
+    font-family: willow;
+    font-size: 1em;
+    text-align: center; 
+    z-index: -1;    
+}
+
   h1{
     margin-top: 0;
     margin-bottom: 0;
     color: white;
     text-shadow: 1px 1px 2px red, 0 0 1em lightpink, 0 0 0.2em white;  
   }
+
+ 
   P{
   font-family: poppins-regular;
     margin: 0.4em;
@@ -28,23 +38,10 @@ main{
     border-radius: 20px;
   }
 
-  
+  .dropdown{
+    display: initial;
+  }
 
-  .home{
-    background-image: url("afbeeldingen/back4.png");
-    background-size: inherit;
-    background-attachment: scroll;
-    margin: 0; 
-  }
-  
-  body{
-      font-family: willow;
-      font-size: 1em;
-      text-align: center; 
-      z-index: -1; 
-      
-  }
-  
   .dropbtn { 
     background-color: transparent;
     color: white;
@@ -81,15 +78,12 @@ main{
   
   .dropdown:hover .dropdown-content {display: block;}
   
-  
+
   
   header nav{
     display: flex;
   }
   
-  .dropdown{
-    display: initial;
-  }
   header{
     text-align: left; 
     display: flex;
@@ -105,15 +99,26 @@ main{
     width: 15em;
   }
 
-  p{
-    font-family: poppins-regular;
-    margin: 1em;
-    margin-bottom: 2em;
-    text-align: center;
-    
+.home{
+    background-image: url("afbeeldingen/back4.png");
+    background-size: inherit;
+    background-attachment: scroll;
+    margin: 0; 
   }
+ 
+.home section{
+    display: flex;
+    align-items: center;
+    margin-left: 2em;
+} 
+.home section img:first-of-type{
+    width: 10vw;
+}
 
-
+.home section img:last-of-type{
+    width: 10vw;
+}
+  
 .navbar {
     background-color: lightpink;
     overflow: hidden;
@@ -145,17 +150,5 @@ main{
     color: white;
   }
 
-.home section{
-    display: flex;
-    align-items: center;
-    margin-left: 2em;
-} 
-.home section img:first-of-type{
-    width: 10vw;
-}
-
-.home section img:last-of-type{
-    width: 10vw;
-}
 
 
